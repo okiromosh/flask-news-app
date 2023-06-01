@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    news_api = NewsApiClient(api_key="b9979723e9bf41259ad5aa5750a59e8e")
+    news_api = NewsApiClient(api_key="your-key")
     top_headlines = news_api.get_top_headlines(sources="al-jazeera-english")
 
     articles = top_headlines['articles']
